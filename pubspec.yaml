@@ -1,0 +1,57 @@
+name: portifolio_web
+description: "Portfolio profissional de desenvolvedor mobile com Clean Architecture."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # i18n
+  intl: any
+
+  # State Management
+  flutter_bloc: ^8.1.6
+  bloc: ^8.1.4
+
+  # Dependency Injection
+  get_it: ^7.7.0
+
+  # Functional Programming (Either)
+  dartz: ^0.10.1
+
+  # URL Launcher (GitHub links)
+  url_launcher: ^6.3.0
+
+  # HTTP client (contact form API)
+  http: ^1.2.2
+
+  # SVG rendering
+  flutter_svg: ^2.0.9
+
+  # Image caching
+  cached_network_image: ^3.3.1
+
+  # Fonts
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - assets/data/projects.json
+    - assets/data/experience.json
+    - assets/icons/

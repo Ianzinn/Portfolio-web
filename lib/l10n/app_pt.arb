@@ -1,0 +1,51 @@
+{
+  "@@locale": "pt",
+
+  "appTitle": "Portfolio — Dev Mobile",
+
+  "heroTitle": "Desenvolvedor Mobile",
+  "heroDescription": "Transformo ideias em aplicativos mobile excepcionais. Especializado em desenvolvimento cross-platform com Flutter, criando experiências fluidas e performáticas para Android e iOS.",
+  "heroCtaProjects": "Ver Projetos",
+  "heroCtaDownloadCv": "Download CV",
+
+  "skillsSectionComment": "Stack de tecnologias",
+  "skillsSectionTitle": "Habilidades",
+  "skillsSectionSubtitle": "Conjunto completo de habilidades para desenvolvimento mobile de ponta a ponta",
+  "skillsCategoryMobile": "Mobile Development",
+  "skillsCategoryLanguages": "Linguagens",
+  "skillsCategoryArchitecture": "Arquitetura",
+  "skillsCategoryUiUx": "UI/UX",
+  "skillsCategoryBackend": "Backend & APIs",
+  "skillsCategoryTools": "Ferramentas",
+
+  "projectsSectionComment": "Featured Projects",
+  "projectsSectionTitle": "Projetos em Destaque",
+  "projectsSectionSubtitle": "Alguns dos meus trabalhos mais recentes em desenvolvimento mobile",
+  "projectsButtonGithub": "GitHub",
+  "projectsButtonDemo": "Demo",
+  "projectsButtonRetry": "Tentar novamente",
+
+  "experienceSectionTitle": "Experiência Profissional",
+  "experienceSectionDescription": "Minha trajetória no desenvolvimento mobile",
+
+  "contactSectionTitle": "Entre em Contato",
+  "contactSectionSubtitle": "Tem um projeto em mente? Vamos conversar",
+  "contactInfoLocation": "Belo Horizonte, Brasil",
+  "contactFormNameHint": "Seu nome",
+  "contactFormNameError": "Insira seu nome",
+  "contactFormEmailHint": "seu@email.com",
+  "contactFormEmailError": "Insira seu email",
+  "contactFormEmailInvalid": "Email inválido",
+  "contactFormMessageHint": "Conte-me sobre seu projeto...",
+  "contactFormMessageError": "Insira sua mensagem",
+  "contactFormSendButton": "Enviar Mensagem",
+  "contactFormSendingButton": "Enviando...",
+  "contactSuccessTitle": "Mensagem enviada com sucesso!",
+  "contactSuccessBody": "Obrigado pelo contato. Responderei em breve.",
+  "contactSuccessRetry": "Enviar outra mensagem",
+  "contactErrorNoConnection": "Sem conexão. Tente novamente.",
+
+  "footerBuiltWith": "Desenvolvido com",
+  "footerEof": "EOF - End of File",
+  "footerCopyright": "Portfolio Dev Mobile"
+}

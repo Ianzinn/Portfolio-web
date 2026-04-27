@@ -1,0 +1,51 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "Portfolio — Mobile Dev",
+
+  "heroTitle": "Mobile Developer",
+  "heroDescription": "I turn ideas into exceptional mobile applications. Specialized in cross-platform development with Flutter, creating smooth and high-performance experiences for Android and iOS.",
+  "heroCtaProjects": "View Projects",
+  "heroCtaDownloadCv": "Download CV",
+
+  "skillsSectionComment": "Technology Stack",
+  "skillsSectionTitle": "Skills",
+  "skillsSectionSubtitle": "Full skill set for end-to-end mobile development",
+  "skillsCategoryMobile": "Mobile Development",
+  "skillsCategoryLanguages": "Languages",
+  "skillsCategoryArchitecture": "Architecture",
+  "skillsCategoryUiUx": "UI/UX",
+  "skillsCategoryBackend": "Backend & APIs",
+  "skillsCategoryTools": "Tools",
+
+  "projectsSectionComment": "Featured Projects",
+  "projectsSectionTitle": "Featured Projects",
+  "projectsSectionSubtitle": "Some of my most recent work in mobile development",
+  "projectsButtonGithub": "GitHub",
+  "projectsButtonDemo": "Demo",
+  "projectsButtonRetry": "Try again",
+
+  "experienceSectionTitle": "Professional Experience",
+  "experienceSectionDescription": "My journey in mobile development",
+
+  "contactSectionTitle": "Get in Touch",
+  "contactSectionSubtitle": "Have a project in mind? Let's talk",
+  "contactInfoLocation": "Belo Horizonte, Brazil",
+  "contactFormNameHint": "Your name",
+  "contactFormNameError": "Please enter your name",
+  "contactFormEmailHint": "your@email.com",
+  "contactFormEmailError": "Please enter your email",
+  "contactFormEmailInvalid": "Invalid email",
+  "contactFormMessageHint": "Tell me about your project...",
+  "contactFormMessageError": "Please enter your message",
+  "contactFormSendButton": "Send Message",
+  "contactFormSendingButton": "Sending...",
+  "contactSuccessTitle": "Message sent successfully!",
+  "contactSuccessBody": "Thank you for reaching out. I'll get back to you soon.",
+  "contactSuccessRetry": "Send another message",
+  "contactErrorNoConnection": "No connection. Please try again.",
+
+  "footerBuiltWith": "Built with",
+  "footerEof": "EOF - End of File",
+  "footerCopyright": "Mobile Developer Portfolio"
+}

@@ -1,0 +1,46 @@
+{
+  "experiences": [
+    {
+      "id": "1",
+      "gitCommand": "git commit -m",
+      "role": "MobileDeveloperApprentice",
+      "roleLabel": "Jovem Aprendiz",
+      "company": "primeiros-passos",
+      "period": "2023 - 2024",
+      "description": "Onde tudo começou. Tive meu primeiro contato com o ecossistema mobile, aprendendo lógica de programação e os fundamentos de interfaces responsivas.",
+      "achievements": [
+        "Introdução ao Dart e Widgets básicos",
+        "Auxílio na manutenção de pequenos componentes",
+        "Aprendizado de versionamento com Git"
+      ],
+      "commitMessage": "Initial commit: Starting mobile journey"
+    },
+    {
+      "id": "2",
+      "gitCommand": "git commit -m",
+      "role": "MobileSoftwareIntern",
+      "roleLabel": "Estagiário",
+      "company": "sua-empresa-atual",
+      "period": "2024 - Presente",
+      "description": "Focado em transformar designs do Figma em código Flutter performático. Atuo diretamente no ciclo de vida de desenvolvimento, aplicando Clean Architecture e boas práticas.",
+      "achievements": [
+        "Desenvolvimento de features com consumo de APIs REST",
+        "Implementação de Gerenciamento de Estado (Bloc/MoBX)",
+        "Refatoração de código para melhor legibilidade e performance"
+      ],
+      "commitMessage": "feat: Building real-world solutions"
+    },
+    {
+      "id": "3",
+      "gitCommand": "git checkout -b",
+      "role": "JuniorMobileDeveloper",
+      "roleLabel": "Júnior",
+      "company": "loading...",
+      "period": "Em breve",
+      "description": "Carregando novas responsabilidades e desafios técnicos.",
+      "achievements": [],
+      "commitMessage": "feature/junior-promotion",
+      "codeSnippet": "while (learning) {\n  improveSkills();\n  buildAwesomeApps();\n  // Status: [▓▓▓▓▓▓▓▓▓░] 90%\n}"
+    }
+  ]
+}
