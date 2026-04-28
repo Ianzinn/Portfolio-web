@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:url_launcher/url_launcher.dart';
 import '../../../../core/extensions/build_context_extensions.dart';
 import '../../../../core/theme/app_theme.dart';
 
@@ -157,7 +158,11 @@ class _ContactSectionState extends State<ContactSection> {
         _ContactCard(
             icon: Icons.email,
             label: 'email:',
-            value: '"ianpedro1812@gmail.com"'),
+            value: '"ianpedro1812@gmail.com"',
+            onTap: () => launchUrl(
+                  Uri.parse('https://mail.google.com/mail/?view=cm&fs=1&to=ianpedro1812@gmail.com'),
+                  webOnlyWindowName: '_blank',
+                )),
         const SizedBox(height: 24),
         _ContactCard(
             icon: Icons.code,
@@ -429,8 +434,9 @@ class _ContactCard extends StatefulWidget {
   final IconData icon;
   final String label;
   final String value;
+  final VoidCallback? onTap;
   const _ContactCard(
-      {required this.icon, required this.label, required this.value});
+      {required this.icon, required this.label, required this.value, this.onTap});
   @override
   State<_ContactCard> createState() => _ContactCardState();
 }
@@ -442,7 +448,9 @@ class _ContactCardState extends State<_ContactCard> {
     return MouseRegion(
       onEnter: (_) => setState(() => _hovered = true),
       onExit: (_) => setState(() => _hovered = false),
-      child: AnimatedContainer(
+      child: GestureDetector(
+        onTap: widget.onTap,
+        child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
         decoration: BoxDecoration(
           color: AppTheme.slate900,
@@ -516,6 +524,7 @@ class _ContactCardState extends State<_ContactCard> {
             ),
           ],
         ),
+      ),
       ),
     );
   }

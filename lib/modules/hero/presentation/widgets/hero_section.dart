@@ -7,7 +7,8 @@ import '../../../../core/extensions/build_context_extensions.dart';
 import '../../../../core/theme/app_theme.dart';
 
 class HeroSection extends StatefulWidget {
-  const HeroSection({super.key});
+  final VoidCallback? onProjectsTap;
+  const HeroSection({super.key, this.onProjectsTap});
 
   @override
   State<HeroSection> createState() => _HeroSectionState();
@@ -133,7 +134,7 @@ class _HeroSectionState extends State<HeroSection>
                     alignment: WrapAlignment.center,
                     children: [
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: widget.onProjectsTap,
                         style: ElevatedButton.styleFrom(
                           backgroundColor: AppTheme.green600,
                           foregroundColor: AppTheme.green200,
@@ -150,21 +151,6 @@ class _HeroSectionState extends State<HeroSection>
                         child: Text('> ${context.l10n.heroCtaProjects}',
                             style: const TextStyle(
                                 fontSize: 16, fontFamily: 'monospace')),
-                      ),
-                      OutlinedButton.icon(
-                        onPressed: () {},
-                        icon: const Icon(Icons.download, size: 16),
-                        label: Text(context.l10n.heroCtaDownloadCv,
-                            style: const TextStyle(
-                                fontSize: 16, fontFamily: 'monospace')),
-                        style: OutlinedButton.styleFrom(
-                          foregroundColor: AppTheme.green400,
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 32, vertical: 20),
-                          side: const BorderSide(color: AppTheme.green600),
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(8)),
-                        ),
                       ),
                     ],
                   ),
@@ -183,7 +169,7 @@ class _HeroSectionState extends State<HeroSection>
                       const SizedBox(width: 16),
                       _SocialButton(
                           svgPath: 'assets/icons/email.svg',
-                          url: 'mailto:ianpedro1812@gmail.com'),
+                          url: 'https://mail.google.com/mail/?view=cm&fs=1&to=ianpedro1812@gmail.com'),
                     ],
                   ),
                   const SizedBox(height: 64),

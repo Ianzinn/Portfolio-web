@@ -18,6 +18,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   late final ScrollController _scrollCtrl;
+  final _projectsKey = GlobalKey();
 
   @override
   void initState() {
@@ -31,6 +32,17 @@ class _HomePageState extends State<HomePage> {
     super.dispose();
   }
 
+  void _scrollToProjects() {
+    final ctx = _projectsKey.currentContext;
+    if (ctx != null) {
+      Scrollable.ensureVisible(
+        ctx,
+        duration: const Duration(milliseconds: 600),
+        curve: Curves.easeInOut,
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return PrimaryScrollController(
@@ -41,14 +53,14 @@ class _HomePageState extends State<HomePage> {
           controller: _scrollCtrl,
           child: Column(
             children: [
-              const HeroSection(),
+              HeroSection(onProjectsTap: _scrollToProjects),
               RevealOnScroll(
                 delay: const Duration(milliseconds: 80),
                 child: const SkillsSection(),
               ),
               RevealOnScroll(
                 delay: const Duration(milliseconds: 80),
-                child: const ProjectsPageContent(),
+                child: ProjectsPageContent(key: _projectsKey),
               ),
               RevealOnScroll(
                 delay: const Duration(milliseconds: 80),

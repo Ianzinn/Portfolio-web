@@ -389,21 +389,10 @@ class _ProjectContent extends StatelessWidget {
 
     final buttons = Padding(
       padding: EdgeInsets.only(left: indentLeft),
-      child: Wrap(
-        spacing: 12,
-        runSpacing: 8,
-        children: [
-          OutlinedButton.icon(
-            onPressed: () => _launchUrl(project.githubUrl),
-            icon: const Icon(Icons.code, size: 16),
-            label: Text(context.l10n.projectsButtonGithub),
-          ),
-          ElevatedButton.icon(
-            onPressed: () => _launchUrl(project.githubUrl),
-            icon: const Icon(Icons.open_in_new, size: 16),
-            label: Text(context.l10n.projectsButtonDemo),
-          ),
-        ],
+      child: OutlinedButton.icon(
+        onPressed: () => _launchUrl(project.githubUrl),
+        icon: const Icon(Icons.code, size: 16),
+        label: Text(context.l10n.projectsButtonGithub),
       ),
     );
 
